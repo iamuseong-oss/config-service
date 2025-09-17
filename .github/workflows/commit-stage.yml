@@ -91,7 +91,7 @@ jobs:
         with:
           image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           output-format: sarif
-          severity-curoff: high
+          severity-cutoff: high
           fail-build: false
 
       - name: Upload Vulnerability Report
